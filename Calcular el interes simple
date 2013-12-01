@@ -1,0 +1,21 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+int main()
+
+{
+float K,i,I;
+int n;
+cout<<"ingrese el valor de K: ";
+cin>>K;
+cout<<"ingrese el valor de i: ";
+cin>>i;
+cout<<"Ingrese el valor de N: ";
+cin>>n;
+I=K*i*n/360;
+cout<<endl;
+cout<<"El interes simple es: "<<I<<"";
+getch();
+return 0;
+}
