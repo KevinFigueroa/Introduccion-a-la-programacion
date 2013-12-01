@@ -1,0 +1,27 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+void main()
+{
+float dia, mes,anho;
+cout<<"Ingrese el dia: ";
+cin>>dia;
+cout<<"Ingrese el mes: ";
+cin>>mes;
+cout<<"Ingrese el anho: ";
+cin>>anho;
+cout<<endl;
+if((dia>=21 && mes==6)||(mes==7)||(mes==8)||(dia<=20 && mes==9))
+cout<<"Es invierno";
+else if ((dia=21 && mes==9)||(mes==10)||(mes==11)||(dia<=20 && mes==12))
+cout<<"Es primavera";
+else if ((dia>=21 && mes==12)||(mes==1)||(mes==2)||(dia<=20 && mes==3))
+cout<<"Es verano";
+else if ((dia>=21 && mes==3)||(mes==4)||(mes==5)||(dia<=20 && mes==6))
+cout<<"Es otonho";
+else if (mes>12)
+cout<<"Mes invalido";
+getch();
+}
