@@ -1,0 +1,32 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+
+int main()
+{
+	float sueldo,sueldobase,impuesto,AFP;
+	cout<<"Ingrese el sueldo: ";
+	cin>>sueldo;
+	cout<<"Ingrese el sueldo basico: ";
+	cin>>sueldobase;
+	cout<<endl;
+	if(sueldo>sueldobase*2)
+		{
+		 impuesto=sueldo*0.13;
+		 AFP=sueldo*0.12;
+		 cout<<"El impuesto a pagar es: "<<impuesto<<"\n";
+		 cout<<"El AFP a pagar es: "<<AFP<<"\n";
+		}
+		else 
+			{
+			impuesto=0;
+			AFP=0;
+			cout<<"El impuesto a pagar es: "<<impuesto<<"\n";
+		    cout<<"El AFP a pagar es: "<<AFP<<"\n";
+			}
+	
+	getch();
+	return 0;
+}
