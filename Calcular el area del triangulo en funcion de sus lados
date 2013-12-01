@@ -1,0 +1,23 @@
+#include "stdafx.h"
+#include <iostream>
+#include "math.h"
+#include "conio.h"
+using namespace std;
+
+int main ()
+{
+int lado1,lado2,lado3;
+float s,Area;
+cout<<"Ingrese el lado a: ";
+cin>>lado1;
+cout<<"Ingrese el lado b: ";
+cin>>lado2;
+cout<<"Ingrese el lado c: ";
+cin>>lado3;
+s=(lado1+lado2+lado3)/2;
+Area=sqrt(s*(s-lado1)*(s-lado2)*(s-lado3));
+cout<<endl;
+cout<<"El area del triangulo es: "<<Area<<"";
+getch ();
+return 0;
+}
