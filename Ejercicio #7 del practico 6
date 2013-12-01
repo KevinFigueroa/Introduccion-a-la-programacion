@@ -1,0 +1,19 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+int main()
+{ 
+ int I,fact,N;
+ fact=1;
+ cout<<"Ingrese el numero del cual desea calcular el factorial:"<<" ";
+ cin>>N;
+ for (I=1;I<=N;I++)
+ {
+ fact=fact*I;
+ }
+ cout<<"El factorial del numero "<<N<<" es: "<<fact;
+ getch ();
+ return 0;
+} 
