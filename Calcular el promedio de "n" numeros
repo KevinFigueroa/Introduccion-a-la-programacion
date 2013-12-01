@@ -1,0 +1,25 @@
+#include "stdafx.h"
+#include <conio.h>
+#include "iostream"
+using namespace std;
+
+int main()
+{
+		float n,s,c,d,p;
+        cout<<"Ingrese el numero de datos que desea promediar: ";
+        cin>>n;
+		s=0;
+		c=0;
+        while (c<n)
+        {
+         cout<<"Ingrese dato"<<c+1<<": ";
+         cin>>d;
+        s=s+d;
+        c=c+1;
+        }
+        p=s/n;
+		cout<<endl;
+        cout<<"El promedio es: "<<p; 
+        getch();
+		return 0;
+}
