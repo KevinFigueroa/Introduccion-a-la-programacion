@@ -14,7 +14,7 @@ int main()
   {
    digito=N%10;
    N=N/10;
-   if(digito%2!=0)
+   if(digito%2==0)
          i=i+1;
   }
   cout<<endl;
